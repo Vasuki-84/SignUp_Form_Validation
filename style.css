@@ -1,4 +1,4 @@
-/* Background with gradient + image */
+
 body {
   margin: 0;
   padding: 0;
@@ -12,7 +12,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-/* Transparent Card */
+
 form {
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(10px);
@@ -25,7 +25,7 @@ form {
   color: #fff;
 }
 
-/* Headline */
+
 h2 {
   text-align: center;
   margin-bottom: 20px;
@@ -61,7 +61,7 @@ h2 {
 .checkBoxError {
   color: #ff4d4d;
   font-size: 0.85rem;
-  display: none; /* will show via JS */
+  display: none; 
 }
 
 /* Checkbox */
