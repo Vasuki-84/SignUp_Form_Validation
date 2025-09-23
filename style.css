@@ -1,0 +1,84 @@
+/* Background with gradient + image */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e")
+      no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Transparent Card */
+form {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  color: #fff;
+}
+
+/* Headline */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Input Styling */
+.form-control {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #fff;
+}
+
+.form-control:focus {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: #0d6efd;
+  box-shadow: none;
+  color: #fff;
+}
+
+/* Labels */
+.form-label {
+  font-weight: 500;
+  color: #fff;
+}
+
+/* Error messages */
+.nameError,
+.emailError,
+.passwordError,
+.confirmPasswordError,
+.checkBoxError {
+  color: #ff4d4d;
+  font-size: 0.85rem;
+  display: none; /* will show via JS */
+}
+
+/* Checkbox */
+.form-check-label {
+  color: #fff;
+}
+
+/* Button */
+.btn-primary {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  background: #0d6efd;
+  border: none;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: #0b5ed7;
+}
