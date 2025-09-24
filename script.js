@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
       validationSuccess = false;
     }
 
+    // Testing email
     if (!emailPattern.test(email.value)) {
       document.getElementById("emailError").style.color = "red";
       document.getElementById("emailError").textContent =
@@ -40,6 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
       validationSuccess = false;
     }
 
+    // Testing password 
     if (!passwordPattern.test(password.value)) {
       document.getElementById("passwordError").style.color = "red";
       document.getElementById("passwordError").textContent =
@@ -71,13 +73,11 @@ document.addEventListener("DOMContentLoaded", () => {
         "You must select checkBox before submitting";
       validationSuccess = false;
     }
+    // form reset
     if (validationSuccess) {
       alert("Form submitted successfully");
       form.reset();
     }
-    document.querySelectorAll(".error").forEach((clear) => {
-      clear.textContent = "";
-      clear.style.color = "";
-    });
+   
   });
 });
